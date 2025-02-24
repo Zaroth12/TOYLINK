@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de Sesión</title>
+        <link rel="stylesheet" href="estilos/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+<body>
+        <div id="particles-js"></div>
+        
+          <div class="login-container">
+              <h2 class="title">ADÉNTRATE EN<br>UN NUEVO<br>UNIVERSO</h2>
+              <form action="menu.html">
+                  <label for="usuario">Usuario</label>
+                  <input type="text" id="usuario" name="usuario" required>
+      
+                  <label for="contrasena">Contraseña</label>
+                  <input type="password" id="contrasena" name="contrasena" required>
+      
+                  <div class="remember-container">
+                      <input type="checkbox" id="recordar">
+                      <label for="recordar">Recordar Usuario y contraseña</label>
+                  </div>
+      
+                  <button type="submit" class="btn-jugar" onclick="window.location.href='menu.html'">JUGAR</button>
+              </form>
+              <p class="register-text">¿Aún no eres parte de nuestro universo? <a href="registro.html">Regístrate aquí</a></p>
+          </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/java.js"></script>  
+</body>
+</html>

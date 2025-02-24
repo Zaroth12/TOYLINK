@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" href="estilos/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+<body>
+    <div id="particles-js"></div>
+    <button class="back-button" onclick="history.back()"><i class="material-icons">arrow_back</i>
+        VOLVER
+    </button>
+      <div class="login-container">
+          <h2 class="title">CREA TU CUENTA</h2>
+          <h5 class="title2">PIDE PERMISO A TUS PADRES</h5>
+          <form action="inicio.html">
+              <label for="correo">Correo</label>
+              <input type="text" id="correo" name="correo" required>
+            
+              <label for="usuario">Usuario</label>
+              <input type="text" id="usuario" name="usuario" required>
+  
+              <label for="contrasena">Contraseña</label>
+              <input type="password" id="contrasena" name="contrasena" required>
+  
+              <label for="confirmar">Confirmar contraseña</label>
+              <input type="password" id="confirmar" name="confirmar" required>
+            
+              <div class="remember-container">
+                  <input type="checkbox" id="recordar">
+                  <label for="recordar">Aceptas nuestros terminos y condiciones</label>
+              </div>
+            <p class="terminos">Revisa nuestros terminos y condiciones <a href="inicio.html">aquí</a></p>
+              <button type="submit" class="btn-jugar" href="inicio.html">REGISTRARME</button>
+          </form>
+            <p class="aviso1">Revisa tu correo electronico para confirmar la creación de tu cuenta</p>
+      </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/java.js"></script>  
+</body>
+</html>
