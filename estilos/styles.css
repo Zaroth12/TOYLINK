@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: linear-gradient(to right, #1B3470, #0E1946);
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #1a1a40, #0b0b2e);
+    z-index: -1;
+}
+
+.login-container {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(39, 94, 205, 1);
+    text-align: center;
+    width: 300px;
+}
+
+.title {
+    font-family: 'Grandstander', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0941B2;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.title2 {
+    font-family: 'Grandstander', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0941B2;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.remember-container input {
+    margin-right: 10px;
+}
+
+.btn-jugar {
+    background-color: #205DDA;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Grandstander', cursive;
+}
+
+.btn-jugar:hover {
+    background-color: #0941B2;
+}
+
+.register-text {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.register-text a {
+    color: #0057FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+.aviso1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.terminos {
+    font-size: 12px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.terminos a {
+    color: #0057FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button {
+    font-family: 'Grandstander', cursive;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: #0941B2;
+    border: 2px solid #193069;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button:hover {
+    background-color: #193069;
+    color: white;
+}
+.container {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+.settings-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    color: #0941B2;
+    border: 2px solid #193069;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    
+}
+.settings-btn i{
+margin-left: 2px;
+font-size: 26px;
+}
+.settings-btn:hover {
+background-color: #193069;
+color: white;
+}
+.planets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.planet {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .planet2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.planet img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.planet2 img {
+    width: 55%;
+    height: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+.btn-planets {
+background-color: #205DDA;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+font-size: 20px;
+cursor: pointer;
+font-weight: bold;
+font-family: 'Grandstander', cursive;
+text-decoration: none;
+}
+
+.scanner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.scanner-box {
+    width: 90%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    background: black;
+    background-image: url('https://i.imgur.com/DgnVzKi.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: glow 1.5s infinite alternate;
+    cursor: pointer;
+}
+@keyframes glow {
+    0% { opacity: 0.7; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+.info-tuto {
+    font-size: 12px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+.info-tuto a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: default;
+}
+.btn-tuto {
+    background-color: #205DDA;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Grandstander', cursive;
+}
+
+.btn-tuto:hover {
+    background-color: #0941B2;
+}
+.icono-juguete {
+    width: 90%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    background-image: url('https://i.imgur.com/66mSOtZ.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.inicio img{
+    display: block;
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.click{
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+    animation: glow 1s infinite alternate;
+}
