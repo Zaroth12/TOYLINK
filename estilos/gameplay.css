@@ -13,8 +13,8 @@ body {
     overflow: hidden;
   }
 .background {
-    width: 200%;
-    height: 200%;
+    width: 130%;
+    height: 130%;
     background: url('https://i.postimg.cc/R0HFxHgY/INTERFAZ1.png') no-repeat top left;
     background-size: cover;
     cursor: grab;
