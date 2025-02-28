@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans", serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,27 +183,27 @@ color: white;
     justify-content: space-between;
     align-items: center;
 }
-.planet {
+.planet-mundo {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
- .planet2{
+ .planet-escaneo{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.planet img {
+.planet-mundo img {
     width: 70%;
     height: auto;
     margin-bottom: 40px;
     cursor: pointer;
 }
-.planet2 img {
+.planet-escaneo img {
     width: 55%;
     height: auto;
     margin-bottom: 40px;
@@ -308,3 +308,192 @@ text-decoration: none;
     text-decoration: underline;
     animation: glow 1s infinite alternate;
 }
+.container-mundo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-container {
+    position: fixed;
+    width: 90%; 
+    margin: auto;
+    overflow: hidden;
+   
+}
+.planets-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; 
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.planet {
+    width: 15%; 
+    height: 15%; 
+    transition: transform 0.5s ease-in-out;
+}
+.planet.center {
+    width: 30%;
+    height: 30%; 
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+}
+.left { left: 0px; }
+.right { right: 0px; }
+.planet-name {
+    position: absolute;
+    top: 80% ;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-family: 'Grandstander', cursive;
+    cursor: pointer;
+}
+.fade-out {
+    opacity: 0;
+}
+.container-mini {
+    display: flex;
+    width: 90%;
+    height: auto;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Sección Izquierda: Selector de personaje */
+.character-selector {
+    background: #0a0a32;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.character-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.character-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid #0941B2;
+}
+
+.flecha {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.character-name {
+    background: #0056ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+      font-family: 'Grandstander', cursive;
+    font-size: 20px;
+}
+
+/* Sección Derecha: Mini Juegos */
+.mini-games {
+    flex: 2;
+    text-align: center;
+    color: #000;
+}
+.mini {
+  background-color: #0941B2;
+  width: 100%;
+}
+.mini i{
+  margin:10px;
+}
+.mini h1 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.games-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px 0;
+}
+.game{
+  width: 30%;
+}
+.game img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.game p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.invite-text {
+    margin-top: 5px;
+    font-size: 15
+      px;
+}
+
+.invite-code {
+    background: #0056ff;
+    color: #fff;
+    margin-top: 0px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  font-family: 'Grandstander', cursive;
+}
+.game1{
+    width: 30%;
+    cursor: pointer;
+  }
+  .game1 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+  }
+  
+  .game1 p {
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 5px;
+  }

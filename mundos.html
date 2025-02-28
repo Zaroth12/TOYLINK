@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nombre</title>
+        <title>Inicio</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="estilos/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap" rel="stylesheet">
@@ -12,25 +12,26 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
 <body>
-    <body>
-        <div id="particles-js"></div>
+    <div id="particles-js"></div>
+    <div class="container-mundo">
         <button class="back-button" onclick="history.back()"><i class="material-icons">arrow_back</i>
-          VOLVER
-      </button>
-          <div class="login-container">
-              <h2 class="title">¡VAMOS A DARLE UN NOMBRE!</h2>
-              
-       <div class="scanner-container">
-          <div class="icono-juguete"></div>
-      </div>
-            
-            <form action="mundos.html">
-                  <label for="usuario">Nombre</label>
-                  <input type="text" id="usuario" name="usuario" required>
-      
-                  <button class="btn-jugar" onclick="window.location.href='mundos.html'">GUARDAR</button>
-          </div>
+    VOLVER
+</button>
+        <button class="settings-btn"><i class="fas fa-cog"></i></button>
+<div class="carousel-container">
+        <div class="arrow left" onclick="prevPlanet()">❮</div>
+        <div class="planets-container">
+            <img src="images/mundo2.png" class="planet">
+            <img src="images/mundo1.png" class="planet center">
+            <img src="images/mundo3.png" class="planet">
+        </div>
+        <div class="arrow right" onclick="nextPlanet()">❯</div>
 
+     </div>
+      
+       <div id="planet-name" class="planet-name" onclick="window.location.href='game.html'">MUNDO 2</div> 
+  
+    </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
         <script src="js/java.js"></script>  
 </body>

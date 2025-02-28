@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    font-family: "Noto Sans", serif;
+  }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+.background {
+    width: 200%;
+    height: 200%;
+    background: url('https://i.postimg.cc/R0HFxHgY/INTERFAZ1.png') no-repeat top left;
+    background-size: cover;
+    cursor: grab;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    background: #205DDA;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Grandstander', cursive;
+  }
+
+.menu-btn {
+    background: #0057ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.menu-content {
+    background: white;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    left: 80px; 
+    top: 15px;
+}
+
+.menu-content h2 {
+    background: #0057ff;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-content li {
+    padding: 10px;
+    display: flex;
+    align-items: right;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 17px;
+}
+
+.menu-content li:hover {
+    background: #bbbbbb;
+}
+.menu-content a {
+    text-decoration: none;
+}
+#icon {
+    margin-right: 10px;
+    color: #205DDA;
+    justify-items: left;
+    font-size: 18px;
+}
+
+.money {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: 5px solid #205DDA;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+
+.money i {
+    font-size: 30px;
+    margin-right: 5px;
+    color: green;
+    margin-right: 10px;
+  }
