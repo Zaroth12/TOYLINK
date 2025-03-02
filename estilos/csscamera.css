@@ -29,6 +29,8 @@ body {
     border: 4px solid white;
     border-radius: 10px;
     position: relative;
+    background: url('https://i.imgur.com/SOB75HP.gif') center center no-repeat;
+    background-size: cover;
 }
 .capture-button {
     position: absolute;

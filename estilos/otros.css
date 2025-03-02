@@ -1,0 +1,255 @@
+body {
+    font-family: "Noto Sans", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: linear-gradient(to right, #1B3470, #0E1946);
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #1a1a40, #0b0b2e);
+    z-index: -1;
+}
+.back-button {
+    font-family: 'Grandstander', cursive;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: #0941B2;
+    border: 2px solid #193069;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button:hover {
+    background-color: #193069;
+    color: white;
+}
+.money {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: 5px solid #205DDA;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+
+.money i {
+    font-size: 30px;
+    margin-right: 5px;
+    color: green;
+    margin-right: 10px;
+  }
+.container {
+    background: white;
+    width: 60%;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(39, 94, 205, 1);
+}
+
+/* Columna Izquierda (Personaje) */
+.character-section {
+    background: #091a42;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.character-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid #0056ff;
+}
+#nombre{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+#character-name {
+    margin-top: 10px;
+    background: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+}
+
+/* Columna Derecha (Personalización) */
+.customization-section {
+    flex: 2;
+    padding: 0px;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #0941B2;
+    padding: 20px;
+    font-family: 'Grandstander', cursive;
+}
+
+/* Botones de pestañas */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tab-buttons button {
+    background: #ccc;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.tab-buttons .active {
+    background: #03276F;
+    color: white;
+}
+
+/* Opciones de personalización */
+.options-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom:10px;
+}
+
+.options {
+    display: none;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.options.active {
+    display: grid;
+}
+
+.option {
+    background: #D2E1FF;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover {
+    background: #a9b2c5;
+}
+
+.option i {
+    font-size: 50px;
+    color: #03276F;
+}
+
+.option p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.invite-code {
+    background: #0941B2;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+  font-family: 'Grandstander', cursive;
+}
+.container-tienda {
+    display: flex;
+    flex-direction: row;  /* Cambia a fila */
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(39, 94, 205, 1);
+}
+.title2{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #0941B2;
+    color: white;
+    font-family: 'Grandstander', cursive;
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+.title2 i{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 60px;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center; /* Centra los elementos verticalmente */
+    
+}
+.character-section-tienda {
+    background: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.comprar {
+    background: #0941B2;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Grandstander', cursive;
+}

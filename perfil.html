@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil</title>
+        <link rel="icon" href="images/favi.ico" type="image/x-icon">
+        <link rel="stylesheet" href="estilos/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container-mundo">
+        <button class="back-button" onclick="history.back()"><i class="material-icons">arrow_back</i>
+    VOLVER
+</button>
+<div class="profile-container">
+       
+    <div class="header-profile">
+    <h2><i class="fa-solid fa-user"></i> MI PERFIL</h2>
+</div>
+   <div class="perfil-content">
+    <!-- Sección izquierda: Información del perfil -->
+    <div class="profile-info">
+      
+        <img id="profile-pic" src="https://i.imgur.com/66mSOtZ.png" alt="Avatar">
+        <div class="profile-data">
+            <p><span><b>USUARIO:</span></b> TILINMASTER777 #LAN</p>
+            <p><span>JUGUETES:</span> 3</p>
+            <p><span>MONEDAS:</span> 100000000</p>
+            <p><span>CÓDIGO DE AMIGO:</span> 1545ERFMG</p>
+        </div>
+    </div>
+
+    <!-- Sección derecha: Colección -->
+    <div class="collection-container">
+        <div class="collection-title"><i class="fa-solid fa-trophy"></i> MI COLECCIÓN <i class="fa-solid fa-trophy"></i></div>
+        <div class="collection-images">
+            <img src="https://i.imgur.com/66mSOtZ.png" class="collection-item" onclick="changeProfile(this)">
+            <img src="https://i.imgur.com/4NBMZa8.png" class="collection-item" onclick="changeProfile(this)">
+            <img src="https://i.imgur.com/zg2UiGv.png" class="collection-item" onclick="changeProfile(this)">
+        </div>
+        <div class="current-selection">ACTUAL: <span id="current-name">---</span></div>
+    </div>
+</div>
+</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/java.js"></script>  
+</body>
+</html>
