@@ -46,3 +46,4 @@ bg.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
         toggleMenu();
     }
+  
